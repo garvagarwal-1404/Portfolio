@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garv Agarwal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">GA</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Garv Agarwal</h1>
+            <p class="hero-title">Electronics &amp; Instrumentation Engineer</p>
+            <p class="hero-subtitle">B.E. student at BITS Pilani, Hyderabad Campus &mdash; passionate about VLSI Design, Embedded Systems, and Hardware Development.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="Garv_Agarwal_Resume.pdf" class="btn btn-outline" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm an Electronics &amp; Instrumentation Engineering student at <strong>BITS Pilani, Hyderabad Campus</strong> (CGPA: 7.98). My interests span Computer Architecture, VLSI Design, Embedded Systems, and Power Electronics.</p>
+                <p>I've interned at <strong>CSIR-CEERI, Pilani</strong> and collaborated with <strong>DRDO</strong> on cutting-edge thermoelectric device research. I enjoy building things from circuit-level design to full system integration.</p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <span class="highlight-number">4</span>
+                        <span class="highlight-label">Projects</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-number">1</span>
+                        <span class="highlight-label">Internship</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-number">7.98</span>
+                        <span class="highlight-label">CGPA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-tag">VLSI / Computer Architecture</div>
+                    <h3 class="project-name">5-Stage Pipelined RISC Processor</h3>
+                    <p class="project-date">Jan 2025 &ndash; May 2025</p>
+                    <p class="project-desc">Designed and implemented a cycle-accurate 5-stage pipelined RISC processor (IF, ID, EX, MEM, WB) in Verilog. Integrated data hazard detection and forwarding units to reduce stall cycles and optimize instruction throughput. Developed a high-performance ALU, scalable register file, pipeline registers, separate data and instruction memories, and comprehensive control logic. Verified correctness with cycle-accurate testbenches.</p>
+                    <div class="project-tech">
+                        <span>Verilog</span>
+                        <span>Computer Architecture</span>
+                    </div>
+                    <a href="reports/project_comparch.pdf" class="project-link" target="_blank">View Report &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">Embedded Systems</div>
+                    <h3 class="project-name">Face Recognition Door Lock System</h3>
+                    <p class="project-date">Aug 2024 &ndash; Nov 2024</p>
+                    <p class="project-desc">Engineered a multi-factor smart lock system on Raspberry Pi 5, integrating facial recognition (FaceNet), PIN input, and RFID override for layered access control. Interfaced camera module, 3x4 keypad, RFID reader, and servo motor using GPIO, SPI, and UART protocols. Achieved 0.6&ndash;0.9 confidence real-time on-device inference without cloud reliance. Delivered a secure, low-cost embedded system alternative to commercial smart locks.</p>
+                    <div class="project-tech">
+                        <span>Raspberry Pi</span>
+                        <span>Python</span>
+                        <span>Embedded Systems</span>
+                    </div>
+                    <a href="reports/VIW.pdf" class="project-link" target="_blank">View Report &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">DRDO Collaboration</div>
+                    <h3 class="project-name">Development of Flexible Thermoelectric Devices</h3>
+                    <p class="project-date">Feb 2024 &ndash; Jul 2025</p>
+                    <p class="project-desc">Developed flexible thermoelectric devices in collaboration with DRDO by integrating advanced thermoelectric materials on flexible substrates, enabling direct energy generation from ambient or human body heat. Modeled pillar structures extensively in COMSOL to optimize substrate base and area parameters for efficiency. Gained expertise in full design workflow from simulation-driven architecture to practical integration.</p>
+                    <div class="project-tech">
+                        <span>COMSOL</span>
+                        <span>Thermoelectrics</span>
+                        <span>DRDO</span>
+                    </div>
+                    <a href="reports/DOP_EndSemesterReport.pdf" class="project-link" target="_blank">View Report &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">Power Electronics / PCB Design</div>
+                    <h3 class="project-name">Boost Converter-Based Solar Battery Charger</h3>
+                    <p class="project-date">May 2024 &ndash; Jul 2024</p>
+                    <p class="project-desc">Developed a Boost Converter-Based Solar Battery Charger for efficient solar energy harvesting, optimized power conversion, and reliable battery management during internship at CSIR-CEERI. Designed and fabricated PCB using DipTrace, ensuring compact layout and reliable performance. Performed circuit simulations and validation in LTspice and MATLAB Simulink to optimize power stage efficiency.</p>
+                    <div class="project-tech">
+                        <span>LTspice</span>
+                        <span>MATLAB Simulink</span>
+                        <span>DipTrace</span>
+                        <span>PCB Design</span>
+                    </div>
+                    <a href="reports/Report-1_Achyut_Garv.pdf" class="project-link" target="_blank">View Report &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Intern &mdash; CSIR-CEERI, Pilani</h3>
+                        <p class="timeline-date">May 2024 &ndash; Jul 2024</p>
+                        <p>Developed a Boost Converter-Based Solar Battery Charger. Designed and fabricated PCB using DipTrace. Performed circuit simulations in LTspice and MATLAB Simulink. Gained hands-on experience in end-to-end hardware development from circuit design to system integration.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>CoStAAn &mdash; Dept. of Lights and Sound, BITS Pilani</h3>
+                        <p class="timeline-date">Jul 2024 &ndash; Present</p>
+                        <p>Led production for renowned artists including Amit Trivedi and Shreya Ghoshal at the cultural fest. Coordinated with a 25+ member team for logistics and seamless event execution. Oversaw full-stage technical setup from inauguration to finale.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Member &mdash; Aeolus Club (Aerial Robotics), BITS Pilani</h3>
+                        <p class="timeline-date">Aug 2023 &ndash; Present</p>
+                        <p>Led a team of 10 to achieve 16th place nationally in a drone design competition. Oversaw strategy development, aerodynamics, and systems integration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>Verilog</span>
+                        <span>C</span>
+                        <span>Python</span>
+                        <span>TCL Scripting</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools &amp; Software</h3>
+                    <div class="skill-tags">
+                        <span>Cadence Virtuoso</span>
+                        <span>MATLAB</span>
+                        <span>Simulink</span>
+                        <span>LTspice</span>
+                        <span>DipTrace</span>
+                        <span>COMSOL</span>
+                        <span>UNIX</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Domains</h3>
+                    <div class="skill-tags">
+                        <span>VLSI Design</span>
+                        <span>PCB Design</span>
+                        <span>Digital/Analog Design</span>
+                        <span>Semiconductor Fabrication</span>
+                        <span>Embedded Systems</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Certifications</h3>
+                    <div class="skill-tags">
+                        <span>Verilog HDL: VLSI Hardware Design (Udemy)</span>
+                        <span>VLSI Physical Design: Basic &amp; Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-text">I'm always open to discussing new opportunities, projects, or collaborations. Feel free to reach out!</p>
+            <div class="contact-grid">
+                <a href="mailto:f20221307@hyderabad.bits-pilani.ac.in" class="contact-card">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+                    <span>f20221307@hyderabad.bits-pilani.ac.in</span>
+                </a>
+                <a href="tel:+919166098127" class="contact-card">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <span>+91 9166098127</span>
+                </a>
+                <a href="https://www.linkedin.com/in/garv-agarwal-510b43207/" class="contact-card" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="contact-resume">
+                <a href="Garv_Agarwal_Resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Garv Agarwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
