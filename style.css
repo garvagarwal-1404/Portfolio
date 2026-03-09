@@ -253,8 +253,32 @@ a {
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 32px;
+    padding: 0;
+    overflow: hidden;
     transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #0d1117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.05);
 }
 
 .project-card:hover {
@@ -270,9 +294,18 @@ a {
     background: rgba(37, 99, 235, 0.08);
     padding: 4px 12px;
     border-radius: 20px;
-    margin-bottom: 16px;
+    margin: 24px 0 16px 24px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+
+.project-name,
+.project-date,
+.project-desc,
+.project-tech,
+.project-link {
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .project-name {
@@ -316,6 +349,7 @@ a {
     font-weight: 500;
     color: var(--primary);
     transition: gap 0.2s;
+    padding-bottom: 24px;
 }
 
 .project-link:hover {
